@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: url(16617.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+div.Container {
+    position: relative;
+}
+
+
+p {
+    position: absolute;
+    margin-top: 45%;
+    margin-right: 10%;
+    font-size: large;
+}
+
+.mynav {
+    color: whitesmoke;
+    font-size: small;
+}
+
+.mynav a {
+    color: wheat;
+}
+
+.mynav a:hover {
+    color: salmon;
+}
