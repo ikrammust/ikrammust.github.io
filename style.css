@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(44, 115, 210);
+    background: radial-gradient(circle, rgba(44, 115, 210, 1) 0%, rgba(0, 137, 186, 1) 40%, rgba(0, 142, 155, 1) 100%);
+    font-family: 'Rubik', 'sans-serif';
+    color: white;
+}
+
+.wrap-box {
+    display: none;
+}
+
+.card-container {
+    display: block;
+}
+
+
+/* CSS BOX */
+.box {
+    height: 200px;
+    width: 200px;
+
+    background-image: url('https://image.flaticon.com/icons/png/512/2308/2308759.png');
+    background-size: cover;
+    background-position: center;
+    margin: 30vh auto 5vh;
+    cursor: pointer;
+}
+
+.txt-box {
+    cursor: pointer;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* end of CSS BOX */
+
+
+/* CSS Card */
+.card-container {
+    width: 40vw;
+    height: 70vh;
+    margin: 15vh auto;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255);
+    border-radius: 20px;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: rgba(83, 83, 206);
+}
+
+.text {
+    text-align: center;
+}
+
+.back-card {
+    background: rgba(75, 170, 173);
+    transform: rotateY(180deg);
+}
+
+.body {
+    padding: 40px;
+}
+
+.avatar img {
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+code {
+    background-color: wheat;
+    color: #e2252b;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
+/* end of CSS Card */
+
+
+
+
+
+
+
+/* Resposive Breakpoint */
+
+/* Tablet Version */
+@media (max-width: 1000px) {
+    .card-container {
+        width: 50vw;
+        height: 65vh;
+        margin: 15vh auto;
+    }
+
+    .card figure {
+        padding: 5px 3px;
+    }
+
+    .body {
+        padding: 20px;
+    }
+
+    .avatar img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .message {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+}
+
+/* Mobile Version */
+@media (max-width: 500px) {
+    .card-container {
+        width: 60vw;
+        height: 55vh;
+        margin: 20vh auto;
+    }
+
+    .card figure {
+        padding: 3px 3px;
+    }
+
+    .avatar img {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 1px;
+    }
+
+    .message {
+        font-size: 0.7em;
+        margin-bottom: 1px;
+    }
+}
+
+
+/* Animation */
+
+.box-animation {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
