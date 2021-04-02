@@ -12,11 +12,11 @@ body {
 }
 
 .wrap-box {
-    display: none;
+    display: block;
 }
 
 .card-container {
-    display: block;
+    display: none;
 }
 
 
@@ -72,12 +72,10 @@ body {
     align-items: center;
 }
 
-.main {
-    background: rgba(83, 83, 206);
-}
-
-.text {
-    text-align: center;
+.front-card {
+    background-image: url(https://progate.com/images/ogp/about.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .back-card {
@@ -85,7 +83,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.body {
+.content {
     padding: 40px;
 }
 
@@ -131,7 +129,7 @@ code {
         padding: 5px 3px;
     }
 
-    .body {
+    .content {
         padding: 20px;
     }
 
